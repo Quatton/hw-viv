@@ -1,0 +1,49 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.36713",
+   "Default View_TopLeft":"-106,16",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port sys_clock -pg 1 -lvl 0 -x 0 -y 540 -defaultsOSRD
+preplace port td7s_sel -pg 1 -lvl 11 -x 2250 -y 380 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x 0 -y 510 -defaultsOSRD
+preplace portBus td7s_out -pg 1 -lvl 11 -x 2250 -y 350 -defaultsOSRD
+preplace portBus led -pg 1 -lvl 11 -x 2250 -y 160 -defaultsOSRD
+preplace portBus sw -pg 1 -lvl 0 -x 0 -y 460 -defaultsOSRD
+preplace inst two_digit_ssd_0 -pg 1 -lvl 10 -x 2110 -y 370 -defaultsOSRD
+preplace inst c_counter_binary_0 -pg 1 -lvl 3 -x 580 -y 260 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 9 -x 1880 -y 380 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 9 -x 1880 -y 480 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 110 -y 530 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 10 -x 2110 -y 160 -defaultsOSRD
+preplace inst c_shift_ram_3 -pg 1 -lvl 8 -x 1650 -y 240 -defaultsOSRD
+preplace inst c_shift_ram_2 -pg 1 -lvl 7 -x 1440 -y 220 -defaultsOSRD
+preplace inst c_shift_ram_0 -pg 1 -lvl 9 -x 1880 -y 70 -defaultsOSRD
+preplace inst c_shift_ram_1 -pg 1 -lvl 6 -x 1240 -y 210 -defaultsOSRD
+preplace inst util_reduced_logic_0 -pg 1 -lvl 5 -x 1010 -y 250 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 4 -x 770 -y 250 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 2 -x 350 -y 470 -defaultsOSRD
+preplace netloc c_counter_binary_0_Q 1 3 6 670 130 NJ 130 NJ 130 NJ 130 NJ 130 1750
+preplace netloc sys_clock_1 1 0 1 NJ 540
+preplace netloc clk_wiz_0_locked 1 1 9 200J 320 NJ 320 NJ 320 NJ 320 NJ 320 NJ 320 NJ 320 NJ 320 1980
+preplace netloc two_digit_ssd_0_sel 1 10 1 NJ 380
+preplace netloc two_digit_ssd_0_dout 1 10 1 2230J 350n
+preplace netloc reset_1 1 0 1 20J 510n
+preplace netloc xlslice_0_Dout 1 9 1 NJ 380
+preplace netloc xlslice_1_Dout 1 9 1 1980J 400n
+preplace netloc c_shift_ram_3_Q 1 8 2 1760 190 NJ
+preplace netloc c_shift_ram_2_Q 1 7 3 1550 170 NJ 170 NJ
+preplace netloc c_shift_ram_1_Q 1 6 4 1340 150 NJ 150 NJ 150 NJ
+preplace netloc c_shift_ram_0_Q 1 5 5 1140 140 NJ 140 NJ 140 NJ 140 1990
+preplace netloc xlconcat_0_dout 1 10 1 NJ 160
+preplace netloc util_reduced_logic_0_Res 1 5 4 1140 280 1340 290 1540 80 NJ
+preplace netloc xlslice_2_Dout 1 4 1 NJ 250
+preplace netloc sw_1 1 0 2 NJ 460 NJ
+preplace netloc util_vector_logic_0_Res 1 2 1 490 260n
+preplace netloc clk_wiz_0_clk_out1 1 1 9 210 330 N 330 670 310 N 310 N 310 N 310 N 310 N 310 1990
+levelinfo -pg 1 0 110 350 580 770 1010 1240 1440 1650 1880 2110 2250
+pagesize -pg 1 -db -bbox -sgen -110 0 2380 600
+"
+}
+0

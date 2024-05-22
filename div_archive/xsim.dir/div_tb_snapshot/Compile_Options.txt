@@ -1,0 +1,1 @@
+-debug "typical" -top "test_divider" -snapshot "div_tb_snapshot" 

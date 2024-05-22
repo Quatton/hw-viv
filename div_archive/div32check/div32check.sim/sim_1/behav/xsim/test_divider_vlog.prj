@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../div32check.srcs/sources_1/bd/design_1/ipshared/4fba" \
+"../../../../../div32.v" \
+
+sv xil_defaultlib  --include "../../../../div32check.srcs/sources_1/bd/design_1/ipshared/4fba" \
+"../../../../../test_divider.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,1 @@
+-debug "typical" -top "test_divider_8191_dummy" -snapshot "div_tb_snapshot_8191" 

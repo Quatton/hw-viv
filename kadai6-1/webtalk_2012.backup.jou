@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 22 17:10:18 2024
+# Process ID: 2012
+# Current directory: C:/Users/atomi/GitHub/hw-viv/kadai6-1
+# Command line: wbtcv.exe -mode batch -source C:/Users/atomi/GitHub/hw-viv/kadai6-1/xsim.dir/div_tb_snapshot_p2/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/atomi/GitHub/hw-viv/kadai6-1/webtalk.log
+# Journal file: C:/Users/atomi/GitHub/hw-viv/kadai6-1\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/atomi/GitHub/hw-viv/kadai6-1/xsim.dir/div_tb_snapshot_p2/webtalk/xsim_webtalk.tcl -notrace

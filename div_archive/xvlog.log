@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2.sv" into library work
+INFO: [VRFC 10-311] analyzing module div32p2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/atomi/GitHub/hw-viv/div_archive/test_divider_p2.sv" into library work
+INFO: [VRFC 10-311] analyzing module test_divider_p2
+WARNING: [VRFC 10-543] converting concatenation to assignment pattern [C:/Users/atomi/GitHub/hw-viv/div_archive/test_divider_p2.sv:39]

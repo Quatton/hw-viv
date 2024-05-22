@@ -1,0 +1,1 @@
+-wto "42b14588cc0244dc8a24c596520703ae" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "two_digit_ssd_behav" "xil_defaultlib.two_digit_ssd" "xil_defaultlib.glbl" -log "elaborate.log" 

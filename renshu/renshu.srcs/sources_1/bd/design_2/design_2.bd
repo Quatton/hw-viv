@@ -1,0 +1,76 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x729947A1D51679B5",
+      "device": "xc7a35ticsg324-1L",
+      "gen_directory": "../../../../renshu.gen/sources_1/bd/design_2",
+      "name": "design_2",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "util_vector_logic_0": ""
+    },
+    "ports": {
+      "sw": {
+        "type": "data",
+        "direction": "I",
+        "left": "3",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "led": {
+        "direction": "O",
+        "left": "3",
+        "right": "0",
+        "parameters": {
+          "PortType": {
+            "value": "data",
+            "value_src": "ip_prop"
+          },
+          "PortType.PROP_SRC": {
+            "value": "false",
+            "value_src": "ip_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "util_vector_logic_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "design_2_util_vector_logic_0_0",
+        "xci_path": "ip\\design_2_util_vector_logic_0_0\\design_2_util_vector_logic_0_0.xci",
+        "inst_hier_path": "util_vector_logic_0",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "not"
+          },
+          "C_SIZE": {
+            "value": "4"
+          }
+        }
+      }
+    },
+    "nets": {
+      "sw_1": {
+        "ports": [
+          "sw",
+          "util_vector_logic_0/Op1"
+        ]
+      },
+      "util_vector_logic_0_Res": {
+        "ports": [
+          "util_vector_logic_0/Res",
+          "led"
+        ]
+      }
+    }
+  }
+}

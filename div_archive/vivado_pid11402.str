@@ -1,0 +1,314 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:47 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 11402
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Tue Apr 25 14:34:17 JST 2023
+Time zone: 	Japan Standard Time (Asia/Tokyo)
+
+OS: PRETTY_NAME="Debian GNU/Linux 10 (buster)"
+OS Version: 4.19.0-21-amd64
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: 1
+Screen size: 2560x1440
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	/home/yosimoto/Xilinx/Vivado/2020.2/tps/lnx64/jre11.0.2
+Java executable location: 	/home/yosimoto/Xilinx/Vivado/2020.2/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	yosimoto
+User home directory: /home/yosimoto
+User working directory: /home/yosimoto/u-tokyo/hardware-lab/div_archive
+User country: 	JP
+User language: 	ja
+User locale: 	ja_JP
+
+RDI_BASEROOT: /home/yosimoto/Xilinx/Vivado
+HDI_APPROOT: /home/yosimoto/Xilinx/Vivado/2020.2
+RDI_DATADIR: /home/yosimoto/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: /home/yosimoto/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: /home/yosimoto/.Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: /home/yosimoto/.Xilinx/Vivado/2020.2/
+Vivado layouts directory: /home/yosimoto/.Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	/home/yosimoto/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	/home/yosimoto/u-tokyo/hardware-lab/div_archive/vivado.log
+Vivado journal file location: 	/home/yosimoto/u-tokyo/hardware-lab/div_archive/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-11402-hodaka
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /home/yosimoto/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2101@recdev.cp.is.s.u-tokyo.ac.jp
+XILINX_DSP: /home/yosimoto/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: /home/yosimoto/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: /home/yosimoto/Xilinx/Vivado/2020.2
+XILINX_SDK: /home/yosimoto/Xilinx/Vitis/2020.2
+XILINX_VITIS: /home/yosimoto/Xilinx/Vitis/2020.2
+XILINX_VIVADO: /home/yosimoto/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: /home/yosimoto/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	134 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,308 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: Sourcing tcl script '/home/yosimoto/.Xilinx/Vivado/Vivado_init.tcl' 
+// Tcl Message: start_gui 
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,314 MB. GUI used memory: 62 MB. Current time: 4/25/23, 2:34:18 PM JST
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+// WARNING: HEventQueue.dispatchEvent() is taking  1280 ms.
+// Elapsed time: 221 seconds
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // y
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// Elapsed time: 38 seconds
+setFileChooser("/home/yosimoto/u-tokyo/hardware-lab/div_archive_ta/div32check_test/div32check.xpr");
+// [GUI Memory]: 75 MB (+76042kb) [00:04:50]
+// [Engine Memory]: 1,323 MB (+1235757kb) [00:04:50]
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: /home/yosimoto/u-tokyo/hardware-lab/div_archive_ta/div32check_test/div32check.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /home/yosimoto/u-tokyo/hardware-lab/div_archive_ta/div32check_test/div32check.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 107 MB (+29710kb) [00:05:01]
+// [Engine Memory]: 1,421 MB (+32983kb) [00:05:03]
+// WARNING: HEventQueue.dispatchEvent() is taking  6193 ms.
+// Tcl Message: open_project /home/yosimoto/u-tokyo/hardware-lab/div_archive_ta/div32check_test/div32check.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/div_archive_ta/div32check' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/yosimoto/Xilinx/Vivado/2020.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,433 MB. GUI used memory: 79 MB. Current time: 4/25/23, 2:38:58 PM JST
+// WARNING: HEventQueue.dispatchEvent() is taking  1197 ms.
+// Tcl Message: INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 7210.234 ; gain = 90.086 ; free physical = 121 ; free virtual = 18427 
+// Project name: div32check; location: /home/yosimoto/u-tokyo/hardware-lab/div_archive_ta/div32check_test; part: xc7a35ticsg324-1L
+// 'i' command handler elapsed time: 57 seconds
+// Elapsed time: 19 seconds
+dismissDialog("Open Project"); // bz
+// [GUI Memory]: 113 MB (+505kb) [00:05:18]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g: FALSE
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // g: FALSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,476 MB. GUI used memory: 132 MB. Current time: 4/25/23, 2:39:18 PM JST
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 133 MB (+15062kb) [00:05:26]
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [/home/yosimoto/u-tokyo/hardware-lab/div_archive/D:/div_archive_ta/div32check/div32check.srcs/constrs_1/new/ioport.xdc:4]. ]", 2); // ah
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [/home/yosimoto/u-tokyo/hardware-lab/div_archive/D:/div_archive_ta/div32check/div32check.srcs/constrs_1/new/ioport.xdc:4]. ]", 2); // ah
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation]", 0); // ah
+// [GUI Memory]: 141 MB (+1304kb) [00:05:31]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// ce (cr): Implementation is Out-of-date: addNotify
+selectButton(PAResourceQtoS.StaleRunDialog_NO, "No"); // a
+// 'dV' command handler elapsed time: 7 seconds
+dismissDialog("Implementation is Out-of-date"); // ce
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Apr 25 14:39:45 2023] Launched synth_1... Run output will be captured here: /home/yosimoto/u-tokyo/hardware-lab/div_archive_ta/div32check_test/div32check.runs/synth_1/runme.log [Tue Apr 25 14:39:45 2023] Launched impl_1... Run output will be captured here: /home/yosimoto/u-tokyo/hardware-lab/div_archive_ta/div32check_test/div32check.runs/impl_1/runme.log 
+// [Engine Memory]: 1,493 MB (+1920kb) [00:05:54]
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 68 seconds
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g: TRUE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, true); // g: TRUE
+// Elapsed time: 18 seconds
+selectTab((HResource) null, (HResource) null, "Log", 2); // aK
+collapseTree(PAResourceItoN.LogPanel_LOG_NAVIGATOR, "[, Out-of-Context Module Runs]", 1); // a
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Implementation", 1); // i
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Implementation Completed: addNotify
+// [GUI Memory]: 150 MB (+2449kb) [00:20:31]
+// Elapsed time: 1175 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bz (cr):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,524 MB. GUI used memory: 85 MB. Current time: 4/25/23, 3:01:03 PM JST
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 1,990 MB (+442499kb) [00:27:18]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,990 MB. GUI used memory: 84 MB. Current time: 4/25/23, 3:01:11 PM JST
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: /home/yosimoto/Xilinx/Vivado/2020.2/data/parts/xilinx/artix7/devint/artix7/xc7a35t/xc7a35t.xgd; ZipEntry: xc7a35t_detail.xgd elapsed time: 0.8s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 1s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 2,120 MB (+31605kb) [00:27:21]
+// [GUI Memory]: 162 MB (+4921kb) [00:27:23]
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  4155 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35ticsg324-1L 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.09 . Memory (MB): peak = 7252.402 ; gain = 0.000 ; free physical = 1692 ; free virtual = 18964 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 289 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are: 
+// Tcl Message:   general.maxThreads 
+// Tcl Message: INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.20 . Memory (MB): peak = 7740.117 ; gain = 0.000 ; free physical = 1158 ; free virtual = 18430 
+// Tcl Message: Restored from archive | CPU: 0.210000 secs | Memory: 3.028549 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.20 . Memory (MB): peak = 7740.117 ; gain = 0.000 ; free physical = 1158 ; free virtual = 18430 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7740.117 ; gain = 0.000 ; free physical = 1158 ; free virtual = 18429 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: open_run: Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 7860.391 ; gain = 607.988 ; free physical = 1063 ; free virtual = 18339 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  1678 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  1242 ms.
+// 'dV' command handler elapsed time: 26 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  1898 ms.
+// U (cr): Critical Messages: addNotify
+// Elapsed time: 27 seconds
+dismissDialog("Open Implemented Design"); // bz
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // U
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Tue Apr 25 15:01:33 2023] Launched impl_1... Run output will be captured here: /home/yosimoto/u-tokyo/hardware-lab/div_archive_ta/div32check_test/div32check.runs/impl_1/runme.log 
+// bz (cr):  Generate Bitstream : addNotify
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,244 MB. GUI used memory: 124 MB. Current time: 4/25/23, 3:01:53 PM JST
+// [Engine Memory]: 2,244 MB (+19334kb) [00:28:03]
+// [GUI Memory]: 179 MB (+8927kb) [00:28:08]
+// Elapsed time: 36 seconds
+selectTab((HResource) null, (HResource) null, "Log", 2); // aK
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 25 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_CONSTRAINTS, "Constraints"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ah
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// A (cr): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Close Project : addNotify
+dismissDialog("Close Project"); // A
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,244 MB. GUI used memory: 106 MB. Current time: 4/25/23, 3:02:46 PM JST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 2,244 MB. GUI used memory: 129 MB. Current time: 4/25/23, 3:02:47 PM JST
+// Tcl Message: close_project 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close Project"); // bz

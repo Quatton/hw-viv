@@ -1,0 +1,68 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.572979",
+   "Default View_TopLeft":"340,244",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port td7s_sel -pg 1 -lvl 9 -x 2310 -y 320 -defaultsOSRD
+preplace port sys_clock -pg 1 -lvl 0 -x -10 -y 90 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x -10 -y 60 -defaultsOSRD
+preplace portBus btn -pg 1 -lvl 0 -x -10 -y 200 -defaultsOSRD
+preplace portBus sw -pg 1 -lvl 0 -x -10 -y 140 -defaultsOSRD
+preplace portBus td7s_out -pg 1 -lvl 9 -x 2310 -y 290 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 250 -y 70 -defaultsOSRD
+preplace inst c_shift_ram_0 -pg 1 -lvl 3 -x 750 -y 170 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 1 -x 250 -y 200 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 1 -x 250 -y 510 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 2 -x 500 -y 630 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 1 -x 250 -y 610 -defaultsOSRD
+preplace inst c_shift_ram_1 -pg 1 -lvl 3 -x 750 -y 370 -defaultsOSRD
+preplace inst two_digit_ssd_0 -pg 1 -lvl 8 -x 2160 -y 330 -defaultsOSRD
+preplace inst c_shift_ram_2 -pg 1 -lvl 7 -x 1910 -y 550 -defaultsOSRD
+preplace inst c_shift_ram_3 -pg 1 -lvl 7 -x 1910 -y 370 -defaultsOSRD
+preplace inst c_addsub_0 -pg 1 -lvl 6 -x 1650 -y 230 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 6 -x 1650 -y 560 -defaultsOSRD
+preplace inst util_vector_logic_1 -pg 1 -lvl 6 -x 1650 -y 410 -defaultsOSRD
+preplace inst util_vector_logic_2 -pg 1 -lvl 4 -x 1020 -y 280 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 2 -x 500 -y 500 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 3 -x 750 -y 540 -defaultsOSRD
+preplace inst util_vector_logic_3 -pg 1 -lvl 4 -x 1020 -y 400 -defaultsOSRD
+preplace inst util_vector_logic_4 -pg 1 -lvl 4 -x 1020 -y 520 -defaultsOSRD
+preplace inst util_vector_logic_5 -pg 1 -lvl 5 -x 1340 -y 430 -defaultsOSRD
+preplace inst util_vector_logic_6 -pg 1 -lvl 5 -x 1340 -y 550 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -x 500 -y 370 -defaultsOSRD
+preplace netloc btn_1 1 0 2 10 670 370J
+preplace netloc sw_1 1 0 3 NJ 140 N 140 650
+preplace netloc clk_wiz_0_clk_out1 1 1 7 N 60 630 650 N 650 1180 340 1510 340 1800J 650 2020
+preplace netloc c_shift_ram_2_Q 1 7 1 2030 340n
+preplace netloc c_shift_ram_3_Q 1 7 1 2040 360n
+preplace netloc clk_wiz_0_locked 1 1 7 NJ 80 620 70 NJ 70 N 70 N 70 N 70 2010
+preplace netloc two_digit_ssd_0_sel 1 8 1 2290 320n
+preplace netloc two_digit_ssd_0_dout 1 8 1 2280 290n
+preplace netloc sys_clock_1 1 0 1 10J 80n
+preplace netloc reset_1 1 0 1 NJ 60
+preplace netloc xlslice_0_Dout 1 1 2 NJ 200 640
+preplace netloc xlslice_1_Dout 1 1 2 350J 310 640
+preplace netloc c_shift_ram_0_Q 1 3 3 850 200 N 200 1510
+preplace netloc c_shift_ram_1_Q 1 3 3 860 210 N 210 1500
+preplace netloc xlslice_2_Dout 1 2 4 600 660 NJ 660 N 660 1490
+preplace netloc util_vector_logic_0_Res 1 6 1 1810 370n
+preplace netloc util_vector_logic_1_Res 1 6 1 1790 330n
+preplace netloc xlconcat_0_dout 1 2 3 610J 630 870 590 1190
+preplace netloc util_vector_logic_2_Res 1 4 2 N 280 1500
+preplace netloc c_addsub_0_S 1 3 4 870 150 NJ 150 N 150 1790
+preplace netloc xlconcat_1_dout 1 3 1 880 410n
+preplace netloc util_vector_logic_3_Res 1 4 1 1170 400n
+preplace netloc xlconstant_0_dout 1 2 3 620J 640 NJ 640 1200
+preplace netloc util_vector_logic_6_Res 1 4 2 1200 360 1480
+preplace netloc util_vector_logic_4_Res 1 4 2 1160J 350 1490
+preplace netloc util_vector_logic_5_Res 1 5 2 1500 490 1790J
+preplace netloc xlslice_3_Dout 1 1 5 360 690 N 690 N 690 N 690 1510
+levelinfo -pg 1 -10 250 500 750 1020 1340 1650 1910 2160 2310
+pagesize -pg 1 -db -bbox -sgen -120 -100 2440 700
+"
+}
+{
+   "da_board_cnt":"1"
+}
