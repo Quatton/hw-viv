@@ -1,0 +1,382 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun  6 13:06:08 2024
+# Process ID: 26132
+# Current directory: C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28440 C:\Users\atomi\GitHub\hw-viv\div_archive\div32p2_32_0\div32p2_32_0_check.xpr
+# Log file: C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0/vivado.log
+# Journal file: C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0/div32p2_32_0_check.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check' since last save.
+INFO: [filemgmt 56-1] IPUserFilesDir: Directory not found as 'C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0/div32p2_32_0_check.ip_user_files'; using path 'C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.ip_user_files' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0/div32p2_32_0_check.srcs/sources_1/bd/design_1/design_1.bd'; using path 'C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/design_1.bd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0/div32p2_32_0_check.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v'; using path 'C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0/div32p2_32_0_check.srcs/constrs_1/new/ioport.xdc'; using path 'C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/constrs_1/new/ioport.xdc' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'design_1_c_shift_ram_0_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'design_1_c_shift_ram_0_1_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'design_1_c_shift_ram_0_2_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'design_1_c_shift_ram_0_3_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'design_1_util_reduced_logic_0_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'design_1_util_reduced_logic_0_1_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'design_1_clk_wiz_0_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'design_1_div32p2_0_0_synth_1' not found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1020.402 ; gain = 0.000
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rstn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rstn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rstn'.
+WARNING: [IP_Flow 19-3157] Bus Interface 'rstn': Bus parameter POLARITY is ACTIVE_LOW but port 'rstn' is not *resetn - please double check the POLARITY setting.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+open_bd_design {C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/design_1.bd>...
+ERROR: [BD 5-197]  Error executing ::bd::get_vlnv_dir - No component.xml path found for this IP 'xilinx.com:ip:gt_quad_base:1.1'
+ERROR: [Common 17-39] '::bd::get_vlnv_dir' failed due to earlier errors.
+ERROR: [BD 41-68] Error sourcing TCL file: ERROR: [Common 17-39] '::bd::get_vlnv_dir' failed due to earlier errors.
+
+    while executing
+"::bd::get_vlnv_dir $::bd::gt_utils::gt_ipdef"
+    invoked from within
+"if { [bd::utils::not_empty $bd::gt_utils::gt_ipdef] } {
+  source [::bd::get_vlnv_dir $::bd::gt_utils::gt_ipdef]/tcl/rules.tcl
+  source [::bd::get_vlnv..."
+    (file "gt_utils.tcl" line 64)
+    invoked from within
+"source -notrace gt_utils.tcl"
+    (file "C:/Xilinx/Vivado/2020.2/scripts/ipintegrator/init.tcl" line 20)
+    invoked from within
+"source -notrace C:/Xilinx/Vivado/2020.2/scripts/ipintegrator/init.tcl"
+Adding component instance block -- xilinx.com:ip:c_shift_ram:12.0 - c_shift_ram_0
+Adding component instance block -- xilinx.com:ip:c_shift_ram:12.0 - c_shift_ram_1
+Adding component instance block -- xilinx.com:ip:c_shift_ram:12.0 - c_shift_ram_2
+Adding component instance block -- xilinx.com:ip:c_shift_ram:12.0 - c_shift_ram_3
+Adding component instance block -- xilinx.com:ip:util_reduced_logic:2.0 - util_reduced_logic_0
+Adding component instance block -- xilinx.com:ip:util_reduced_logic:2.0 - util_reduced_logic_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:module_ref:div32p2:1.0 - div32p2_0
+Successfully read diagram <design_1> from block design file <C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1020.402 ; gain = 0.000
+ERROR: [Common 17-39] 'open_bd_design' failed due to earlier errors.
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2.v] -no_script -reset -force -quiet
+remove_files  C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2.v
+update_files -from_files C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0.v -to_files C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2.v -filesets [get_filesets *]
+update_module_reference design_1_div32p2_0_0
+ERROR: [filemgmt 56-189] Failed to resolve reference. Nothing was found in the project to match the name 'div32p2'.
+ERROR: [Common 17-39] 'update_module_reference' failed due to earlier errors.
+add_files -norecurse C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0.v
+update_module_reference design_1_div32p2_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rstn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rstn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rstn'.
+WARNING: [IP_Flow 19-3157] Bus Interface 'rstn': Bus parameter POLARITY is ACTIVE_LOW but port 'rstn' is not *resetn - please double check the POLARITY setting.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_div32p2_0_0 to use current project options
+Wrote  : <C:\Users\atomi\GitHub\hw-viv\div_archive\div32p2check\div32p2check.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 6
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /c_shift_ram_2 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /c_shift_ram_0 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /c_shift_ram_1 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /c_shift_ram_3 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+Wrote  : <C:\Users\atomi\GitHub\hw-viv\div_archive\div32p2check\div32p2check.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block div32p2_0 .
+Exporting to file C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Thu Jun  6 13:08:30 2024] Launched design_1_c_shift_ram_0_0_synth_1, design_1_c_shift_ram_0_1_synth_1, design_1_c_shift_ram_0_2_synth_1, design_1_c_shift_ram_0_3_synth_1, design_1_util_reduced_logic_0_0_synth_1, design_1_util_reduced_logic_0_1_synth_1, design_1_clk_wiz_0_0_synth_1, design_1_div32p2_0_0_synth_1...
+Run output will be captured here:
+design_1_c_shift_ram_0_0_synth_1: C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0/div32p2_32_0_check.runs/design_1_c_shift_ram_0_0_synth_1/runme.log
+design_1_c_shift_ram_0_1_synth_1: C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0/div32p2_32_0_check.runs/design_1_c_shift_ram_0_1_synth_1/runme.log
+design_1_c_shift_ram_0_2_synth_1: C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0/div32p2_32_0_check.runs/design_1_c_shift_ram_0_2_synth_1/runme.log
+design_1_c_shift_ram_0_3_synth_1: C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0/div32p2_32_0_check.runs/design_1_c_shift_ram_0_3_synth_1/runme.log
+design_1_util_reduced_logic_0_0_synth_1: C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0/div32p2_32_0_check.runs/design_1_util_reduced_logic_0_0_synth_1/runme.log
+design_1_util_reduced_logic_0_1_synth_1: C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0/div32p2_32_0_check.runs/design_1_util_reduced_logic_0_1_synth_1/runme.log
+design_1_clk_wiz_0_0_synth_1: C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0/div32p2_32_0_check.runs/design_1_clk_wiz_0_0_synth_1/runme.log
+design_1_div32p2_0_0_synth_1: C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0/div32p2_32_0_check.runs/design_1_div32p2_0_0_synth_1/runme.log
+[Thu Jun  6 13:08:30 2024] Launched synth_1...
+Run output will be captured here: C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0/div32p2_32_0_check.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1112.258 ; gain = 91.855
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35ticsg324-1L
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_0_0/design_1_c_shift_ram_0_0.dcp' for cell 'design_1_i/c_shift_ram_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_0_1/design_1_c_shift_ram_0_1.dcp' for cell 'design_1_i/c_shift_ram_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_0_2/design_1_c_shift_ram_0_2.dcp' for cell 'design_1_i/c_shift_ram_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_0_3/design_1_c_shift_ram_0_3.dcp' for cell 'design_1_i/c_shift_ram_3'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'design_1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_util_reduced_logic_0_0/design_1_util_reduced_logic_0_0.dcp' for cell 'design_1_i/util_reduced_logic_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_util_reduced_logic_0_1/design_1_util_reduced_logic_0_1.dcp' for cell 'design_1_i/util_reduced_logic_1'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1290.918 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/constrs_1/new/ioport.xdc]
+Finished Parsing XDC File [C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/constrs_1/new/ioport.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'design_1_div32p2_0_0' instantiated as 'design_1_i/div32p2_0' [C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/synth/design_1.v:61]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1958.059 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1983.004 ; gain = 837.340
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Thu Jun  6 13:11:44 2024] Launched synth_1...
+Run output will be captured here: C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0/div32p2_32_0_check.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35ticsg324-1L
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_0_0/design_1_c_shift_ram_0_0.dcp' for cell 'design_1_i/c_shift_ram_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_0_1/design_1_c_shift_ram_0_1.dcp' for cell 'design_1_i/c_shift_ram_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_0_2/design_1_c_shift_ram_0_2.dcp' for cell 'design_1_i/c_shift_ram_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_0_3/design_1_c_shift_ram_0_3.dcp' for cell 'design_1_i/c_shift_ram_3'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'design_1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_div32p2_0_0/design_1_div32p2_0_0.dcp' for cell 'design_1_i/div32p2_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_util_reduced_logic_0_0/design_1_util_reduced_logic_0_0.dcp' for cell 'design_1_i/util_reduced_logic_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_util_reduced_logic_0_1/design_1_util_reduced_logic_0_1.dcp' for cell 'design_1_i/util_reduced_logic_1'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 2005.414 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 313 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'design_1_wrapper' is not ideal for floorplanning, since the cellview 'design_1_div32p2_0_0_div32p2' defined in file 'design_1_div32p2_0_0.edf' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/constrs_1/new/ioport.xdc]
+Finished Parsing XDC File [C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/constrs_1/new/ioport.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2070.242 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2070.242 ; gain = 64.828
+reset_run synth_1
+update_module_reference design_1_div32p2_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rstn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rstn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rstn'.
+WARNING: [IP_Flow 19-3157] Bus Interface 'rstn': Bus parameter POLARITY is ACTIVE_LOW but port 'rstn' is not *resetn - please double check the POLARITY setting.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_div32p2_0_0 from div32p2_v1_0 1.0 to div32p2_v1_0 1.0
+Wrote  : <C:\Users\atomi\GitHub\hw-viv\div_archive\div32p2check\div32p2check.srcs\sources_1\bd\design_1\design_1.bd> 
+launch_runs synth_1 -jobs 6
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /c_shift_ram_2 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /c_shift_ram_0 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /c_shift_ram_1 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /c_shift_ram_3 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+Wrote  : <C:\Users\atomi\GitHub\hw-viv\div_archive\div32p2check\div32p2check.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block div32p2_0 .
+Exporting to file C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Thu Jun  6 13:19:02 2024] Launched design_1_div32p2_0_0_synth_1...
+Run output will be captured here: C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0/div32p2_32_0_check.runs/design_1_div32p2_0_0_synth_1/runme.log
+[Thu Jun  6 13:19:02 2024] Launched synth_1...
+Run output will be captured here: C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0/div32p2_32_0_check.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2070.242 ; gain = 0.000
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35ticsg324-1L
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_0_0/design_1_c_shift_ram_0_0.dcp' for cell 'design_1_i/c_shift_ram_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_0_1/design_1_c_shift_ram_0_1.dcp' for cell 'design_1_i/c_shift_ram_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_0_2/design_1_c_shift_ram_0_2.dcp' for cell 'design_1_i/c_shift_ram_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_0_3/design_1_c_shift_ram_0_3.dcp' for cell 'design_1_i/c_shift_ram_3'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'design_1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_div32p2_0_0/design_1_div32p2_0_0.dcp' for cell 'design_1_i/div32p2_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_util_reduced_logic_0_0/design_1_util_reduced_logic_0_0.dcp' for cell 'design_1_i/util_reduced_logic_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_util_reduced_logic_0_1/design_1_util_reduced_logic_0_1.dcp' for cell 'design_1_i/util_reduced_logic_1'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2138.238 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 105 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'design_1_wrapper' is not ideal for floorplanning, since the cellview 'design_1_div32p2_0_0_div32p2' defined in file 'design_1_div32p2_0_0.edf' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/constrs_1/new/ioport.xdc]
+Finished Parsing XDC File [C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/constrs_1/new/ioport.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2138.238 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_utilization -name utilization_1
+reset_run synth_1
+update_module_reference design_1_div32p2_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rstn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rstn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rstn'.
+WARNING: [IP_Flow 19-3157] Bus Interface 'rstn': Bus parameter POLARITY is ACTIVE_LOW but port 'rstn' is not *resetn - please double check the POLARITY setting.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_div32p2_0_0 from div32p2_v1_0 1.0 to div32p2_v1_0 1.0
+Wrote  : <C:\Users\atomi\GitHub\hw-viv\div_archive\div32p2check\div32p2check.srcs\sources_1\bd\design_1\design_1.bd> 
+launch_runs synth_1 -jobs 6
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /c_shift_ram_2 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /c_shift_ram_0 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /c_shift_ram_1 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /c_shift_ram_3 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+Wrote  : <C:\Users\atomi\GitHub\hw-viv\div_archive\div32p2check\div32p2check.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block div32p2_0 .
+Exporting to file C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Thu Jun  6 13:22:26 2024] Launched design_1_div32p2_0_0_synth_1...
+Run output will be captured here: C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0/div32p2_32_0_check.runs/design_1_div32p2_0_0_synth_1/runme.log
+[Thu Jun  6 13:22:26 2024] Launched synth_1...
+Run output will be captured here: C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0/div32p2_32_0_check.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2215.809 ; gain = 7.578
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Thu Jun  6 13:25:51 2024] Launched synth_1...
+Run output will be captured here: C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0/div32p2_32_0_check.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35ticsg324-1L
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_0_0/design_1_c_shift_ram_0_0.dcp' for cell 'design_1_i/c_shift_ram_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_0_1/design_1_c_shift_ram_0_1.dcp' for cell 'design_1_i/c_shift_ram_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_0_2/design_1_c_shift_ram_0_2.dcp' for cell 'design_1_i/c_shift_ram_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_0_3/design_1_c_shift_ram_0_3.dcp' for cell 'design_1_i/c_shift_ram_3'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'design_1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_div32p2_0_0/design_1_div32p2_0_0.dcp' for cell 'design_1_i/div32p2_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_util_reduced_logic_0_0/design_1_util_reduced_logic_0_0.dcp' for cell 'design_1_i/util_reduced_logic_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_util_reduced_logic_0_1/design_1_util_reduced_logic_0_1.dcp' for cell 'design_1_i/util_reduced_logic_1'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 2217.039 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 209 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'design_1_wrapper' is not ideal for floorplanning, since the cellview 'design_1_div32p2_0_0_div32p2' defined in file 'design_1_div32p2_0_0.edf' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/constrs_1/new/ioport.xdc]
+Finished Parsing XDC File [C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/constrs_1/new/ioport.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2217.039 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2217.039 ; gain = 0.000
+report_utilization -name utilization_1
+open_bd_design {C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/design_1.bd}
+update_files -from_files C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0.v -to_files C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0.v -filesets [get_filesets *]
+ERROR: [Vivado 12-3481] Cannot replace a file with itself: 'C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0.v'
+import_files C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0.v
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Thu Jun  6 13:28:54 2024] Launched synth_1...
+Run output will be captured here: C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2_32_0/div32p2_32_0_check.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35ticsg324-1L
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_0_0/design_1_c_shift_ram_0_0.dcp' for cell 'design_1_i/c_shift_ram_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_0_1/design_1_c_shift_ram_0_1.dcp' for cell 'design_1_i/c_shift_ram_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_0_2/design_1_c_shift_ram_0_2.dcp' for cell 'design_1_i/c_shift_ram_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_0_3/design_1_c_shift_ram_0_3.dcp' for cell 'design_1_i/c_shift_ram_3'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'design_1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_div32p2_0_0/design_1_div32p2_0_0.dcp' for cell 'design_1_i/div32p2_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_util_reduced_logic_0_0/design_1_util_reduced_logic_0_0.dcp' for cell 'design_1_i/util_reduced_logic_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_util_reduced_logic_0_1/design_1_util_reduced_logic_0_1.dcp' for cell 'design_1_i/util_reduced_logic_1'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 2217.039 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 209 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'design_1_wrapper' is not ideal for floorplanning, since the cellview 'design_1_div32p2_0_0_div32p2' defined in file 'design_1_div32p2_0_0.edf' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [c:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/constrs_1/new/ioport.xdc]
+Finished Parsing XDC File [C:/Users/atomi/GitHub/hw-viv/div_archive/div32p2check/div32p2check.srcs/constrs_1/new/ioport.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2228.230 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2228.230 ; gain = 11.191
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jun  6 13:30:21 2024...

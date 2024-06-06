@@ -1,6 +1,6 @@
 Vivado Simulator 2020.2
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -debug typical -top test_divider_p2 -snapshot div_tb_snapshot_p2 
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -debug typical -top test_div_8191 -snapshot div_tb_snapshot_8191 
 Multi-threading is on. Using 10 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -8,6 +8,6 @@ Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module work.div32p2
-Compiling module work.test_divider_p2
-Built simulation snapshot div_tb_snapshot_p2
+Compiling module work.divider_8191
+Compiling module work.test_div_8191
+Built simulation snapshot div_tb_snapshot_8191

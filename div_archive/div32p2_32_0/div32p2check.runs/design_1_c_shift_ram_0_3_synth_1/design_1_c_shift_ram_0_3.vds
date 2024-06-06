@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May 17 20:26:06 2021
+# Process ID: 5240
+# Current directory: D:/div_archive/div32p2check/div32p2check.runs/design_1_c_shift_ram_0_3_synth_1
+# Command line: vivado.exe -log design_1_c_shift_ram_0_3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_c_shift_ram_0_3.tcl
+# Log file: D:/div_archive/div32p2check/div32p2check.runs/design_1_c_shift_ram_0_3_synth_1/design_1_c_shift_ram_0_3.vds
+# Journal file: D:/div_archive/div32p2check/div32p2check.runs/design_1_c_shift_ram_0_3_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_c_shift_ram_0_3.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_c_shift_ram_0_3, cache-ID = 8abd96909e20988a.
+INFO: [Common 17-206] Exiting Vivado at Mon May 17 20:26:11 2021...

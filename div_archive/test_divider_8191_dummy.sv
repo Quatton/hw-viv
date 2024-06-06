@@ -1,18 +1,41 @@
 `timescale 1ns / 1ps
 `default_nettype none
 
-module test_divider_8191_dummy #(parameter integer K = 32) ();
-   logic [K+31:0] x;
-   logic [31:0]  q;
-   logic [K-1:0] r;
+module test_divider_8191_dummy ();
+   integer i;
+   logic [31:0] x;
+   logic [12:0] y;
+   logic [19:0] z;
 
-   divider_8191 DUT (.*);
+   logic [12:0] r;
+   logic [31:0] t;
+   logic [31:0] t2;
+   logic [19:0] q;
+
+   divider_8191 u(x,y,z);
 
    initial begin
-      x = 343564231;
-      #1;
-      assert (q == 343564231 / 8191) else $fatal("Error: q = %d", q);
-      assert (r == 343564231 % 8191) else $fatal("Error: r = %d", r);
+      //$dumpfile("test_div_8191.vcd");
+      //$dumpvars(0);
+
+      for (i=0; i<1; i++) begin
+	 x = 124134134;
+	 t = x % 8191;
+	 r = t[12:0];
+	 t2 = x / 8191;
+	 q = t2[19:0];
+         #1;
+	 if (i%10000 == 0) begin
+	    $display("i = %d", i);
+	 end
+	 if (y !== r) begin
+	    $display("y %b %b %b", x, r, y);
+	 end 
+	 if (z !== q) begin
+	    $display("z %b %b %b", x, q, z);
+	 end 
+      end
+      $finish;
    end
 endmodule
 

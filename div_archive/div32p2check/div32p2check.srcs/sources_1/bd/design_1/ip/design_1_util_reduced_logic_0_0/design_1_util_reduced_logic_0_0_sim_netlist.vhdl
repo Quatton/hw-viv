@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
 -- Date        : Mon May 17 20:26:00 2021
 -- Host        : LAPTOP-FN0HITC1 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               d:/div_archive/div32p2check/div32p2check.srcs/sources_1/bd/design_1/ip/design_1_util_reduced_logic_0_0/design_1_util_reduced_logic_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_1_util_reduced_logic_0_0 -prefix
+--               design_1_util_reduced_logic_0_0_ design_1_util_reduced_logic_0_0_sim_netlist.vhdl
 -- Design      : design_1_util_reduced_logic_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -19,8 +19,6 @@ entity design_1_util_reduced_logic_0_0_util_reduced_logic_v2_0_4_util_reduced_lo
     Res : out STD_LOGIC;
     Op1 : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_util_reduced_logic_0_0_util_reduced_logic_v2_0_4_util_reduced_logic : entity is "util_reduced_logic_v2_0_4_util_reduced_logic";
 end design_1_util_reduced_logic_0_0_util_reduced_logic_v2_0_4_util_reduced_logic;
 
 architecture STRUCTURE of design_1_util_reduced_logic_0_0_util_reduced_logic_v2_0_4_util_reduced_logic is

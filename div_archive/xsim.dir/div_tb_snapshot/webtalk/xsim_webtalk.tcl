@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/Users/atomi/GitHub/hw-viv/div_archive/xsim.dir/div_tb_snapshot/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Wed May 22 22:05:04 2024" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Thu Jun  6 13:40:35 2024" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2020.2 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "3064766" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "5312041c-c0d3-4e81-bdf9-8cdf84bd929c" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "3fb63370-3201-469c-b921-db06d590126e" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "10" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "120" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Windows Server 2016 or Windows 10" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "AMD Ryzen 5 5600U with Radeon Graphics         " -context "user_environment"
@@ -26,7 +26,7 @@ webtalk_add_data -client xsim -key runall -value "true" -context "xsim\\command_
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key runtime -value "50200 ns" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "0" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "1.05_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "7720_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 3478156068 -regid "" -xml C:/Users/atomi/GitHub/hw-viv/div_archive/xsim.dir/div_tb_snapshot/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/atomi/GitHub/hw-viv/div_archive/xsim.dir/div_tb_snapshot/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/atomi/GitHub/hw-viv/div_archive/xsim.dir/div_tb_snapshot/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.88_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "7812_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 570250208 -regid "" -xml C:/Users/atomi/GitHub/hw-viv/div_archive/xsim.dir/div_tb_snapshot/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/atomi/GitHub/hw-viv/div_archive/xsim.dir/div_tb_snapshot/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/atomi/GitHub/hw-viv/div_archive/xsim.dir/div_tb_snapshot/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun  6 13:40:31 2024
+# Process ID: 11596
+# Current directory: C:/Users/atomi/GitHub/hw-viv/div_archive
+# Command line: xsim.exe -mode tcl -source {xsim.dir/div_tb_snapshot/xsim_script.tcl}
+# Log file: C:/Users/atomi/GitHub/hw-viv/div_archive/xsim.log
+# Journal file: C:/Users/atomi/GitHub/hw-viv/div_archive\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/div_tb_snapshot/xsim_script.tcl
+# xsim {div_tb_snapshot} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+start of checking module div32
+end of checking module div32
+$finish called at time : 50200 ns : File "C:/Users/atomi/GitHub/hw-viv/div_archive/test_divider.sv" Line 63
+exit
+INFO: [Common 17-206] Exiting xsim at Thu Jun  6 13:40:35 2024...
