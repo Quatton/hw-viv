@@ -40,7 +40,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 # The design that will be created by this Tcl script contains the following 
 # module references:
-# div32
+# divider_8191
 
 # Please add the sources of those modules before sourcing this Tcl script.
 
@@ -166,7 +166,6 @@ proc create_root_design { parentCell } {
 
   # Create ports
   set led0 [ create_bd_port -dir O -type data led0 ]
-  set led1 [ create_bd_port -dir O -type data led1 ]
   set reset [ create_bd_port -dir I -type rst reset ]
   set_property -dict [ list \
    CONFIG.POLARITY {ACTIVE_LOW} \
@@ -179,42 +178,22 @@ proc create_root_design { parentCell } {
   # Create instance: c_shift_ram_0, and set properties
   set c_shift_ram_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:c_shift_ram:12.0 c_shift_ram_0 ]
   set_property -dict [ list \
-   CONFIG.AsyncInitVal {0000000000000000000000000000000000000000000000000000000000000000} \
-   CONFIG.DefaultData {0000000000000000000000000000000000000000000000000000000000000000} \
-   CONFIG.Depth {1} \
-   CONFIG.SyncInitVal {0000000000000000000000000000000000000000000000000000000000000000} \
-   CONFIG.Width {64} \
- ] $c_shift_ram_0
-
-  # Create instance: c_shift_ram_1, and set properties
-  set c_shift_ram_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:c_shift_ram:12.0 c_shift_ram_1 ]
-  set_property -dict [ list \
    CONFIG.AsyncInitVal {00000000000000000000000000000000} \
    CONFIG.DefaultData {00000000000000000000000000000000} \
    CONFIG.Depth {1} \
    CONFIG.SyncInitVal {00000000000000000000000000000000} \
    CONFIG.Width {32} \
- ] $c_shift_ram_1
+ ] $c_shift_ram_0
 
   # Create instance: c_shift_ram_2, and set properties
   set c_shift_ram_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:c_shift_ram:12.0 c_shift_ram_2 ]
   set_property -dict [ list \
-   CONFIG.AsyncInitVal {00000000000000000000000000000000} \
-   CONFIG.DefaultData {00000000000000000000000000000000} \
+   CONFIG.AsyncInitVal {00000000000000000000} \
+   CONFIG.DefaultData {00000000000000000000} \
    CONFIG.Depth {1} \
-   CONFIG.SyncInitVal {00000000000000000000000000000000} \
-   CONFIG.Width {32} \
+   CONFIG.SyncInitVal {00000000000000000000} \
+   CONFIG.Width {20} \
  ] $c_shift_ram_2
-
-  # Create instance: c_shift_ram_3, and set properties
-  set c_shift_ram_3 [ create_bd_cell -type ip -vlnv xilinx.com:ip:c_shift_ram:12.0 c_shift_ram_3 ]
-  set_property -dict [ list \
-   CONFIG.AsyncInitVal {00000000000000000000000000000000} \
-   CONFIG.DefaultData {00000000000000000000000000000000} \
-   CONFIG.Depth {1} \
-   CONFIG.SyncInitVal {00000000000000000000000000000000} \
-   CONFIG.Width {32} \
- ] $c_shift_ram_3
 
   # Create instance: clk_wiz_0, and set properties
   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
@@ -226,13 +205,13 @@ proc create_root_design { parentCell } {
    CONFIG.USE_BOARD_FLOW {true} \
  ] $clk_wiz_0
 
-  # Create instance: div32_0, and set properties
-  set block_name div32
-  set block_cell_name div32_0
-  if { [catch {set div32_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+  # Create instance: divider_8191_0, and set properties
+  set block_name divider_8191
+  set block_cell_name divider_8191_0
+  if { [catch {set divider_8191_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
      catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
      return 1
-   } elseif { $div32_0 eq "" } {
+   } elseif { $divider_8191_0 eq "" } {
      catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
      return 1
    }
@@ -241,34 +220,19 @@ proc create_root_design { parentCell } {
   set util_reduced_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_reduced_logic:2.0 util_reduced_logic_0 ]
   set_property -dict [ list \
    CONFIG.C_OPERATION {xor} \
-   CONFIG.C_SIZE {32} \
+   CONFIG.C_SIZE {20} \
    CONFIG.LOGO_FILE {data/sym_xorgate.png} \
  ] $util_reduced_logic_0
 
-  # Create instance: util_reduced_logic_1, and set properties
-  set util_reduced_logic_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_reduced_logic:2.0 util_reduced_logic_1 ]
-  set_property -dict [ list \
-   CONFIG.C_OPERATION {xor} \
-   CONFIG.C_SIZE {32} \
-   CONFIG.LOGO_FILE {data/sym_xorgate.png} \
- ] $util_reduced_logic_1
-
   # Create port connections
-  connect_bd_net -net c_shift_ram_0_Q [get_bd_pins c_shift_ram_0/D] [get_bd_pins c_shift_ram_0/Q] [get_bd_pins div32_0/x]
+  connect_bd_net -net c_shift_ram_0_Q [get_bd_pins c_shift_ram_0/D] [get_bd_pins c_shift_ram_0/Q] [get_bd_pins divider_8191_0/x]
   set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets c_shift_ram_0_Q]
-  connect_bd_net -net c_shift_ram_1_Q [get_bd_pins c_shift_ram_1/D] [get_bd_pins c_shift_ram_1/Q] [get_bd_pins div32_0/d]
-  set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets c_shift_ram_1_Q]
   connect_bd_net -net c_shift_ram_2_Q [get_bd_pins c_shift_ram_2/Q] [get_bd_pins util_reduced_logic_0/Op1]
-  connect_bd_net -net c_shift_ram_3_Q [get_bd_pins c_shift_ram_3/Q] [get_bd_pins util_reduced_logic_1/Op1]
-  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins c_shift_ram_0/CLK] [get_bd_pins c_shift_ram_1/CLK] [get_bd_pins c_shift_ram_2/CLK] [get_bd_pins c_shift_ram_3/CLK] [get_bd_pins clk_wiz_0/clk_out1]
-  connect_bd_net -net div32_0_q [get_bd_pins c_shift_ram_2/D] [get_bd_pins div32_0/q]
-  set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets div32_0_q]
-  connect_bd_net -net div32_0_r [get_bd_pins c_shift_ram_3/D] [get_bd_pins div32_0/r]
-  set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets div32_0_r]
+  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins c_shift_ram_0/CLK] [get_bd_pins c_shift_ram_2/CLK] [get_bd_pins clk_wiz_0/clk_out1]
+  connect_bd_net -net divider_8191_0_q [get_bd_pins c_shift_ram_2/D] [get_bd_pins divider_8191_0/q]
   connect_bd_net -net reset_1 [get_bd_ports reset] [get_bd_pins clk_wiz_0/resetn]
   connect_bd_net -net sys_clock_1 [get_bd_ports sys_clock] [get_bd_pins clk_wiz_0/clk_in1]
   connect_bd_net -net util_reduced_logic_0_Res [get_bd_ports led0] [get_bd_pins util_reduced_logic_0/Res]
-  connect_bd_net -net util_reduced_logic_1_Res [get_bd_ports led1] [get_bd_pins util_reduced_logic_1/Res]
 
   # Create address segments
 

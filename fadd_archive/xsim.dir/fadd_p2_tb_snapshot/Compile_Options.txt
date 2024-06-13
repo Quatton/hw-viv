@@ -1,0 +1,1 @@
+-debug "typical" -top "test_fadd_p2" -snapshot "fadd_p2_tb_snapshot" 

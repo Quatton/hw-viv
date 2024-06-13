@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Mon May 17 20:19:39 2021
-| Host         : LAPTOP-FN0HITC1 running 64-bit major release  (build 9200)
+| Date         : Thu Jun  6 15:56:32 2024
+| Host         : ispc-JPH245YLS8 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_c_shift_ram_0_2_utilization_synth.rpt -pb design_1_c_shift_ram_0_2_utilization_synth.pb
 | Design       : design_1_c_shift_ram_0_2
 | Device       : 7a35ticsg324-1L
@@ -33,8 +33,8 @@ Table of Contents
 | Slice LUTs*             |    0 |     0 |     20800 |  0.00 |
 |   LUT as Logic          |    0 |     0 |     20800 |  0.00 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
-| Slice Registers         |   32 |     0 |     41600 |  0.08 |
-|   Register as Flip Flop |   32 |     0 |     41600 |  0.08 |
+| Slice Registers         |   20 |     0 |     41600 |  0.05 |
+|   Register as Flip Flop |   20 |     0 |     41600 |  0.05 |
 |   Register as Latch     |    0 |     0 |     41600 |  0.00 |
 | F7 Muxes                |    0 |     0 |     16300 |  0.00 |
 | F8 Muxes                |    0 |     0 |      8150 |  0.00 |
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 32    |          Yes |       Reset |            - |
+| 20    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -146,7 +146,7 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |   32 |        Flop & Latch |
+| FDRE     |   20 |        Flop & Latch |
 +----------+------+---------------------+
 
 

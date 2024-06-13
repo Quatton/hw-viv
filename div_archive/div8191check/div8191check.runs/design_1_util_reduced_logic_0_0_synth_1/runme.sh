@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/div_archive/div32check/div32check.runs/design_1_util_reduced_logic_0_0_synth_1'
+HD_PWD='C:/Users/atomi/GitHub/hw-viv/div_archive/div8191check/div8191check.runs/design_1_util_reduced_logic_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Jun  5 22:49:50 2024" VIVADOVERSION="2020.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jun  6 16:19:06 2024" VIVADOVERSION="2020.2">
 
   <SYSTEMINFO ARCH="artix7" BOARD="digilentinc.com:arty-a7-35:part0:1.0" DEVICE="7a35ti" NAME="design_1" PACKAGE="csg324" SPEEDGRADE="-1L"/>
 
@@ -7,11 +7,6 @@
     <PORT DIR="O" NAME="led0" SIGIS="data" SIGNAME="util_reduced_logic_0_Res">
       <CONNECTIONS>
         <CONNECTION INSTANCE="util_reduced_logic_0" PORT="Res"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="led1" SIGIS="data" SIGNAME="util_reduced_logic_1_Res">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="util_reduced_logic_1" PORT="Res"/>
       </CONNECTIONS>
     </PORT>
     <PORT CLKFREQUENCY="100000000" DIR="I" NAME="sys_clock" SIGIS="clk" SIGNAME="External_Ports_sys_clock">
@@ -36,14 +31,14 @@
       <PARAMETERS>
         <PARAMETER NAME="C_XDEVICEFAMILY" VALUE="artix7"/>
         <PARAMETER NAME="C_VERBOSITY" VALUE="0"/>
-        <PARAMETER NAME="C_WIDTH" VALUE="64"/>
+        <PARAMETER NAME="C_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_DEPTH" VALUE="1"/>
         <PARAMETER NAME="C_ADDR_WIDTH" VALUE="4"/>
         <PARAMETER NAME="C_SHIFT_TYPE" VALUE="0"/>
         <PARAMETER NAME="C_OPT_GOAL" VALUE="0"/>
-        <PARAMETER NAME="C_AINIT_VAL" VALUE="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <PARAMETER NAME="C_SINIT_VAL" VALUE="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <PARAMETER NAME="C_DEFAULT_DATA" VALUE="0000000000000000000000000000000000000000000000000000000000000000"/>
+        <PARAMETER NAME="C_AINIT_VAL" VALUE="00000000000000000000000000000000"/>
+        <PARAMETER NAME="C_SINIT_VAL" VALUE="00000000000000000000000000000000"/>
+        <PARAMETER NAME="C_DEFAULT_DATA" VALUE="00000000000000000000000000000000"/>
         <PARAMETER NAME="C_HAS_A" VALUE="0"/>
         <PARAMETER NAME="C_HAS_CE" VALUE="0"/>
         <PARAMETER NAME="C_REG_LAST_BIT" VALUE="1"/>
@@ -61,75 +56,6 @@
         <PARAMETER NAME="OptGoal" VALUE="Resources"/>
         <PARAMETER NAME="RegLastBit" VALUE="true"/>
         <PARAMETER NAME="CE" VALUE="false"/>
-        <PARAMETER NAME="Width" VALUE="64"/>
-        <PARAMETER NAME="Depth" VALUE="1"/>
-        <PARAMETER NAME="DefaultDataRadix" VALUE="2"/>
-        <PARAMETER NAME="DefaultData" VALUE="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <PARAMETER NAME="ReadMifFile" VALUE="false"/>
-        <PARAMETER NAME="MemInitFile" VALUE="no_coe_file_loaded"/>
-        <PARAMETER NAME="AsyncInitRadix" VALUE="2"/>
-        <PARAMETER NAME="AsyncInitVal" VALUE="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <PARAMETER NAME="SSET" VALUE="false"/>
-        <PARAMETER NAME="SCLR" VALUE="false"/>
-        <PARAMETER NAME="SINIT" VALUE="false"/>
-        <PARAMETER NAME="SyncInitRadix" VALUE="2"/>
-        <PARAMETER NAME="SyncInitVal" VALUE="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <PARAMETER NAME="SyncCtrlPriority" VALUE="Reset_Overrides_Set"/>
-        <PARAMETER NAME="CEPriority" VALUE="Sync_Overrides_CE"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="I" LEFT="63" NAME="D" RIGHT="0" SIGIS="data" SIGNAME="c_shift_ram_0_Q">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="c_shift_ram_0" PORT="Q"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="63" NAME="Q" RIGHT="0" SIGIS="data" SIGNAME="c_shift_ram_0_Q">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="c_shift_ram_0" PORT="D"/>
-            <CONNECTION INSTANCE="div32_0" PORT="x"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE COREREVISION="14" FULLNAME="/c_shift_ram_1" HWVERSION="12.0" INSTANCE="c_shift_ram_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="c_shift_ram" VLNV="xilinx.com:ip:c_shift_ram:12.0">
-      <DOCUMENTS>
-        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=c_shift_ram;v=v12_0;d=pg122-c-shift-ram.pdf"/>
-      </DOCUMENTS>
-      <PARAMETERS>
-        <PARAMETER NAME="C_XDEVICEFAMILY" VALUE="artix7"/>
-        <PARAMETER NAME="C_VERBOSITY" VALUE="0"/>
-        <PARAMETER NAME="C_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_DEPTH" VALUE="1"/>
-        <PARAMETER NAME="C_ADDR_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="C_SHIFT_TYPE" VALUE="0"/>
-        <PARAMETER NAME="C_OPT_GOAL" VALUE="0"/>
-        <PARAMETER NAME="C_AINIT_VAL" VALUE="00000000000000000000000000000000"/>
-        <PARAMETER NAME="C_SINIT_VAL" VALUE="00000000000000000000000000000000"/>
-        <PARAMETER NAME="C_DEFAULT_DATA" VALUE="00000000000000000000000000000000"/>
-        <PARAMETER NAME="C_HAS_A" VALUE="0"/>
-        <PARAMETER NAME="C_HAS_CE" VALUE="0"/>
-        <PARAMETER NAME="C_REG_LAST_BIT" VALUE="1"/>
-        <PARAMETER NAME="C_SYNC_PRIORITY" VALUE="1"/>
-        <PARAMETER NAME="C_SYNC_ENABLE" VALUE="0"/>
-        <PARAMETER NAME="C_HAS_SCLR" VALUE="0"/>
-        <PARAMETER NAME="C_HAS_SSET" VALUE="0"/>
-        <PARAMETER NAME="C_HAS_SINIT" VALUE="0"/>
-        <PARAMETER NAME="C_MEM_INIT_FILE" VALUE="no_coe_file_loaded"/>
-        <PARAMETER NAME="C_ELABORATION_DIR" VALUE="./"/>
-        <PARAMETER NAME="C_READ_MIF" VALUE="0"/>
-        <PARAMETER NAME="C_PARSER_TYPE" VALUE="0"/>
-        <PARAMETER NAME="Component_Name" VALUE="design_1_c_shift_ram_0_1"/>
-        <PARAMETER NAME="ShiftRegType" VALUE="Fixed_Length"/>
-        <PARAMETER NAME="OptGoal" VALUE="Resources"/>
-        <PARAMETER NAME="RegLastBit" VALUE="true"/>
-        <PARAMETER NAME="CE" VALUE="false"/>
         <PARAMETER NAME="Width" VALUE="32"/>
         <PARAMETER NAME="Depth" VALUE="1"/>
         <PARAMETER NAME="DefaultDataRadix" VALUE="2"/>
@@ -148,9 +74,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="31" NAME="D" RIGHT="0" SIGIS="data" SIGNAME="c_shift_ram_1_Q">
+        <PORT DIR="I" LEFT="31" NAME="D" RIGHT="0" SIGIS="data" SIGNAME="c_shift_ram_0_Q">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="c_shift_ram_1" PORT="Q"/>
+            <CONNECTION INSTANCE="c_shift_ram_0" PORT="Q"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
@@ -158,10 +84,10 @@
             <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="Q" RIGHT="0" SIGIS="data" SIGNAME="c_shift_ram_1_Q">
+        <PORT DIR="O" LEFT="31" NAME="Q" RIGHT="0" SIGIS="data" SIGNAME="c_shift_ram_0_Q">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="c_shift_ram_1" PORT="D"/>
-            <CONNECTION INSTANCE="div32_0" PORT="d"/>
+            <CONNECTION INSTANCE="c_shift_ram_0" PORT="D"/>
+            <CONNECTION INSTANCE="divider_8191_0" PORT="x"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -174,14 +100,14 @@
       <PARAMETERS>
         <PARAMETER NAME="C_XDEVICEFAMILY" VALUE="artix7"/>
         <PARAMETER NAME="C_VERBOSITY" VALUE="0"/>
-        <PARAMETER NAME="C_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_WIDTH" VALUE="20"/>
         <PARAMETER NAME="C_DEPTH" VALUE="1"/>
         <PARAMETER NAME="C_ADDR_WIDTH" VALUE="4"/>
         <PARAMETER NAME="C_SHIFT_TYPE" VALUE="0"/>
         <PARAMETER NAME="C_OPT_GOAL" VALUE="0"/>
-        <PARAMETER NAME="C_AINIT_VAL" VALUE="00000000000000000000000000000000"/>
-        <PARAMETER NAME="C_SINIT_VAL" VALUE="00000000000000000000000000000000"/>
-        <PARAMETER NAME="C_DEFAULT_DATA" VALUE="00000000000000000000000000000000"/>
+        <PARAMETER NAME="C_AINIT_VAL" VALUE="00000000000000000000"/>
+        <PARAMETER NAME="C_SINIT_VAL" VALUE="00000000000000000000"/>
+        <PARAMETER NAME="C_DEFAULT_DATA" VALUE="00000000000000000000"/>
         <PARAMETER NAME="C_HAS_A" VALUE="0"/>
         <PARAMETER NAME="C_HAS_CE" VALUE="0"/>
         <PARAMETER NAME="C_REG_LAST_BIT" VALUE="1"/>
@@ -199,27 +125,27 @@
         <PARAMETER NAME="OptGoal" VALUE="Resources"/>
         <PARAMETER NAME="RegLastBit" VALUE="true"/>
         <PARAMETER NAME="CE" VALUE="false"/>
-        <PARAMETER NAME="Width" VALUE="32"/>
+        <PARAMETER NAME="Width" VALUE="20"/>
         <PARAMETER NAME="Depth" VALUE="1"/>
         <PARAMETER NAME="DefaultDataRadix" VALUE="2"/>
-        <PARAMETER NAME="DefaultData" VALUE="00000000000000000000000000000000"/>
+        <PARAMETER NAME="DefaultData" VALUE="00000000000000000000"/>
         <PARAMETER NAME="ReadMifFile" VALUE="false"/>
         <PARAMETER NAME="MemInitFile" VALUE="no_coe_file_loaded"/>
         <PARAMETER NAME="AsyncInitRadix" VALUE="2"/>
-        <PARAMETER NAME="AsyncInitVal" VALUE="00000000000000000000000000000000"/>
+        <PARAMETER NAME="AsyncInitVal" VALUE="00000000000000000000"/>
         <PARAMETER NAME="SSET" VALUE="false"/>
         <PARAMETER NAME="SCLR" VALUE="false"/>
         <PARAMETER NAME="SINIT" VALUE="false"/>
         <PARAMETER NAME="SyncInitRadix" VALUE="2"/>
-        <PARAMETER NAME="SyncInitVal" VALUE="00000000000000000000000000000000"/>
+        <PARAMETER NAME="SyncInitVal" VALUE="00000000000000000000"/>
         <PARAMETER NAME="SyncCtrlPriority" VALUE="Reset_Overrides_Set"/>
         <PARAMETER NAME="CEPriority" VALUE="Sync_Overrides_CE"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="31" NAME="D" RIGHT="0" SIGIS="data" SIGNAME="div32_0_q">
+        <PORT DIR="I" LEFT="19" NAME="D" RIGHT="0" SIGIS="data" SIGNAME="divider_8191_0_q">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="div32_0" PORT="q"/>
+            <CONNECTION INSTANCE="divider_8191_0" PORT="q"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
@@ -227,77 +153,9 @@
             <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="Q" RIGHT="0" SIGIS="data" SIGNAME="c_shift_ram_2_Q">
+        <PORT DIR="O" LEFT="19" NAME="Q" RIGHT="0" SIGIS="data" SIGNAME="c_shift_ram_2_Q">
           <CONNECTIONS>
             <CONNECTION INSTANCE="util_reduced_logic_0" PORT="Op1"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE COREREVISION="14" FULLNAME="/c_shift_ram_3" HWVERSION="12.0" INSTANCE="c_shift_ram_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="c_shift_ram" VLNV="xilinx.com:ip:c_shift_ram:12.0">
-      <DOCUMENTS>
-        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=c_shift_ram;v=v12_0;d=pg122-c-shift-ram.pdf"/>
-      </DOCUMENTS>
-      <PARAMETERS>
-        <PARAMETER NAME="C_XDEVICEFAMILY" VALUE="artix7"/>
-        <PARAMETER NAME="C_VERBOSITY" VALUE="0"/>
-        <PARAMETER NAME="C_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_DEPTH" VALUE="1"/>
-        <PARAMETER NAME="C_ADDR_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="C_SHIFT_TYPE" VALUE="0"/>
-        <PARAMETER NAME="C_OPT_GOAL" VALUE="0"/>
-        <PARAMETER NAME="C_AINIT_VAL" VALUE="00000000000000000000000000000000"/>
-        <PARAMETER NAME="C_SINIT_VAL" VALUE="00000000000000000000000000000000"/>
-        <PARAMETER NAME="C_DEFAULT_DATA" VALUE="00000000000000000000000000000000"/>
-        <PARAMETER NAME="C_HAS_A" VALUE="0"/>
-        <PARAMETER NAME="C_HAS_CE" VALUE="0"/>
-        <PARAMETER NAME="C_REG_LAST_BIT" VALUE="1"/>
-        <PARAMETER NAME="C_SYNC_PRIORITY" VALUE="1"/>
-        <PARAMETER NAME="C_SYNC_ENABLE" VALUE="0"/>
-        <PARAMETER NAME="C_HAS_SCLR" VALUE="0"/>
-        <PARAMETER NAME="C_HAS_SSET" VALUE="0"/>
-        <PARAMETER NAME="C_HAS_SINIT" VALUE="0"/>
-        <PARAMETER NAME="C_MEM_INIT_FILE" VALUE="no_coe_file_loaded"/>
-        <PARAMETER NAME="C_ELABORATION_DIR" VALUE="./"/>
-        <PARAMETER NAME="C_READ_MIF" VALUE="0"/>
-        <PARAMETER NAME="C_PARSER_TYPE" VALUE="0"/>
-        <PARAMETER NAME="Component_Name" VALUE="design_1_c_shift_ram_0_3"/>
-        <PARAMETER NAME="ShiftRegType" VALUE="Fixed_Length"/>
-        <PARAMETER NAME="OptGoal" VALUE="Resources"/>
-        <PARAMETER NAME="RegLastBit" VALUE="true"/>
-        <PARAMETER NAME="CE" VALUE="false"/>
-        <PARAMETER NAME="Width" VALUE="32"/>
-        <PARAMETER NAME="Depth" VALUE="1"/>
-        <PARAMETER NAME="DefaultDataRadix" VALUE="2"/>
-        <PARAMETER NAME="DefaultData" VALUE="00000000000000000000000000000000"/>
-        <PARAMETER NAME="ReadMifFile" VALUE="false"/>
-        <PARAMETER NAME="MemInitFile" VALUE="no_coe_file_loaded"/>
-        <PARAMETER NAME="AsyncInitRadix" VALUE="2"/>
-        <PARAMETER NAME="AsyncInitVal" VALUE="00000000000000000000000000000000"/>
-        <PARAMETER NAME="SSET" VALUE="false"/>
-        <PARAMETER NAME="SCLR" VALUE="false"/>
-        <PARAMETER NAME="SINIT" VALUE="false"/>
-        <PARAMETER NAME="SyncInitRadix" VALUE="2"/>
-        <PARAMETER NAME="SyncInitVal" VALUE="00000000000000000000000000000000"/>
-        <PARAMETER NAME="SyncCtrlPriority" VALUE="Reset_Overrides_Set"/>
-        <PARAMETER NAME="CEPriority" VALUE="Sync_Overrides_CE"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="I" LEFT="31" NAME="D" RIGHT="0" SIGIS="data" SIGNAME="div32_0_r">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="div32_0" PORT="r"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="Q" RIGHT="0" SIGIS="data" SIGNAME="c_shift_ram_3_Q">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="util_reduced_logic_1" PORT="Op1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -894,41 +752,29 @@
         <PORT CLKFREQUENCY="100000000" DIR="O" NAME="clk_out1" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="c_shift_ram_0" PORT="CLK"/>
-            <CONNECTION INSTANCE="c_shift_ram_1" PORT="CLK"/>
             <CONNECTION INSTANCE="c_shift_ram_2" PORT="CLK"/>
-            <CONNECTION INSTANCE="c_shift_ram_3" PORT="CLK"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="locked" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/div32_0" HWVERSION="1.0" INSTANCE="div32_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="div32" VLNV="xilinx.com:module_ref:div32:1.0">
+    <MODULE COREREVISION="1" FULLNAME="/divider_8191_0" HWVERSION="1.0" INSTANCE="divider_8191_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="divider_8191" VLNV="xilinx.com:module_ref:divider_8191:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="K" VALUE="32"/>
-        <PARAMETER NAME="Component_Name" VALUE="design_1_div32_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_divider_8191_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="63" NAME="x" RIGHT="0" SIGIS="undef" SIGNAME="c_shift_ram_0_Q">
+        <PORT DIR="I" LEFT="31" NAME="x" RIGHT="0" SIGIS="undef" SIGNAME="c_shift_ram_0_Q">
           <CONNECTIONS>
             <CONNECTION INSTANCE="c_shift_ram_0" PORT="Q"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="d" RIGHT="0" SIGIS="undef" SIGNAME="c_shift_ram_1_Q">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="c_shift_ram_1" PORT="Q"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="q" RIGHT="0" SIGIS="undef" SIGNAME="div32_0_q">
+        <PORT DIR="O" LEFT="12" NAME="r" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="19" NAME="q" RIGHT="0" SIGIS="undef" SIGNAME="divider_8191_0_q">
           <CONNECTIONS>
             <CONNECTION INSTANCE="c_shift_ram_2" PORT="D"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="r" RIGHT="0" SIGIS="undef" SIGNAME="div32_0_r">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="c_shift_ram_3" PORT="D"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -938,13 +784,13 @@
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_OPERATION" VALUE="xor"/>
-        <PARAMETER NAME="C_SIZE" VALUE="32"/>
+        <PARAMETER NAME="C_SIZE" VALUE="20"/>
         <PARAMETER NAME="Component_Name" VALUE="design_1_util_reduced_logic_0_0"/>
         <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_xorgate.png"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="31" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="c_shift_ram_2_Q">
+        <PORT DIR="I" LEFT="19" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="c_shift_ram_2_Q">
           <CONNECTIONS>
             <CONNECTION INSTANCE="c_shift_ram_2" PORT="Q"/>
           </CONNECTIONS>
@@ -952,29 +798,6 @@
         <PORT DIR="O" NAME="Res" SIGIS="undef" SIGNAME="util_reduced_logic_0_Res">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="led0"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE COREREVISION="4" FULLNAME="/util_reduced_logic_1" HWVERSION="2.0" INSTANCE="util_reduced_logic_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_reduced_logic" VLNV="xilinx.com:ip:util_reduced_logic:2.0">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="C_OPERATION" VALUE="xor"/>
-        <PARAMETER NAME="C_SIZE" VALUE="32"/>
-        <PARAMETER NAME="Component_Name" VALUE="design_1_util_reduced_logic_0_1"/>
-        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_xorgate.png"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="I" LEFT="31" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="c_shift_ram_3_Q">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="c_shift_ram_3" PORT="Q"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="Res" SIGIS="undef" SIGNAME="util_reduced_logic_1_Res">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="led1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

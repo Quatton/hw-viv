@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2021 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2024 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -52,19 +52,19 @@
 
 (* X_CORE_INFO = "util_reduced_logic_v2_0_4_util_reduced_logic,Vivado 2020.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_util_reduced_logic_0_0,util_reduced_logic_v2_0_4_util_reduced_logic,{}" *)
-(* CORE_GENERATION_INFO = "design_1_util_reduced_logic_0_0,util_reduced_logic_v2_0_4_util_reduced_logic,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=util_reduced_logic,x_ipVersion=2.0,x_ipCoreRevision=4,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_OPERATION=xor,C_SIZE=32}" *)
+(* CORE_GENERATION_INFO = "design_1_util_reduced_logic_0_0,util_reduced_logic_v2_0_4_util_reduced_logic,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=util_reduced_logic,x_ipVersion=2.0,x_ipCoreRevision=4,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_OPERATION=xor,C_SIZE=20}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_util_reduced_logic_0_0 (
   Op1,
   Res
 );
 
-input wire [31 : 0] Op1;
+input wire [19 : 0] Op1;
 output wire Res;
 
   util_reduced_logic_v2_0_4_util_reduced_logic #(
     .C_OPERATION("xor"),
-    .C_SIZE(32)
+    .C_SIZE(20)
   ) inst (
     .Op1(Op1),
     .Res(Res)
